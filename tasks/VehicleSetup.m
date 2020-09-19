@@ -39,8 +39,14 @@ Vehicle.Rotor.b = Vehicle.Rotor.Ct*rho*Vehicle.Rotor.area*Vehicle.Rotor.radius^2
 Vehicle.Rotor.k = Vehicle.Rotor.Cq*rho*Vehicle.Rotor.area*Vehicle.Rotor.radius^3;
 Vehicle.Rotor.w2ToThrustGain = Vehicle.Rotor.Ct*rho*Vehicle.Rotor.area*Vehicle.Rotor.radius^2;
 
+Sensors.IMU.cg = [0,0,0];
+Sensors.IMU.location = [0,0,0];
+
+Sensors.Altimeter = altimeterSensor('ReferenceFrame','NED');
+
 defineStatesBus;
 defineEnvironmentBus;
+defineSensorBus;
 
 Ts = 0.005;
 
