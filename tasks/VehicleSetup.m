@@ -44,9 +44,11 @@ Sensors.IMU.location = [0,0,0];
 
 Sensors.Altimeter = altimeterSensor('ReferenceFrame','NED');
 
-defineStatesBus;
-defineEnvironmentBus;
-defineSensorBus;
+% defineStatesBus;
+% defineEnvironmentBus;
+% defineSensorBus;
+
+load('QCSbuses.mat');
 
 Ts = 0.005;
 
