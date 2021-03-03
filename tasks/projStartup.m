@@ -1,20 +1,26 @@
+%% Project Startup
+
 clear;
 clc;
 
+%% Global Variables
+
 rho = 1.184;
 g = 9.81;
+Ts = 0.005;
+
+%% Setup Tasks
 
 VehicleSetup;
 
 SensorsSetup;
 
-estimatorVars;
+ControlSystemSetup;
 
 load('QCSbuses.mat');
 
-Ts = 0.005;
+%% Initial Conditions
 
-% Initial conditions
 init.date = [2017 1 1 0 0 0];
 init.posLLA = [43.1541 -79.5432 100];
 init.posNED = [0 0 0];
