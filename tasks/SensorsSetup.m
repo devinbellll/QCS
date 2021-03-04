@@ -11,13 +11,14 @@ Sensors.IMU.Accel.Bias = [0.02,0.02,0.03]; % m/s^2
 Sensors.IMU.Accel.noiseSpectral = g*230e-6; % m/s^2/sqrt(Hz)
 Sensors.IMU.Accel.tempScaleFactor = g*0.0008; % m/s^2/C
 Sensors.IMU.Accel.tempSensFactor = 0.026; % %/C
+Sensors.IMU.Accel.PSD = Sensors.IMU.Accel.noiseSpectral^2; % (m/s^2)^2/Hz
 
 %% Gyroscope
 Sensors.IMU.Gyro.FSR = 34.907; % rad/s
 Sensors.IMU.Gyro.Sens = deg2rad(1/131); % (rad/s)/LSB
 Sensors.IMU.Gyro.Bias = [0.00872665,0.015708,0.0174533]; % rad/s
 Sensors.IMU.Gyro.noiseSpectral = deg2rad(0.015); % (rad/s)/sqrt(Hz)
-Sensors.IMU.Gyro.PSD = (Sensors.IMU.Gyro.noiseSpectral^2)/(2*pi); % (rad/s)^2/(rad/s)
+Sensors.IMU.Gyro.PSD = Sensors.IMU.Gyro.noiseSpectral^2; % (rad/s)^2/Hz
 
 %% Magnetometer
 Sensors.IMU.Mag.FSR = 4800; % uT
