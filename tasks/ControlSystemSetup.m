@@ -2,8 +2,12 @@
 
 %% Controller
 
-Controller.T2Throttle = [-71209 12848 67.783];
-Controller.F2T = [0.0005 0.0078 0.0025];
+Controller.F2Throttle = [-4.85680e0 1.14920e2 9.00427e1];
+Controller.T2Throttle = [-7.12089e4 1.28483e4 6.77826e1];
+Controller.F2T = [4.55179e-4 7.76575e-3 2.49177e-3];
+Controller.Throttle2T = [1.33223e-7 2.64397e-5 -4.46355e-4];
+Controller.Throttle2F = [7.795453e-6 6.03210e-3 -5.48379e-1];
+
 
 Controller.Alt.Kp = 4;
 Controller.Alt.Kd = 4;
