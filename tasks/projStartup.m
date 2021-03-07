@@ -3,6 +3,15 @@
 clear;
 clc;
 
+%% Set Variants
+VSS_ENV = 0;
+VSS_constEnv = Simulink.Variant('VSS_ENV == 0');
+VSS_varEnv = Simulink.Variant('VSS_ENV == 1');
+
+VSS_SENS = 0;
+VSS_feedSens = Simulink.Variant('VSS_SENS == 0');
+VSS_noiseSens = Simulink.Variant('VSS_SENS == 1');
+
 %% Global Variables
 
 rho = 1.184;
