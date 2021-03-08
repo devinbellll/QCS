@@ -12,6 +12,9 @@ VSS_SENS = 0;
 VSS_feedSens = Simulink.Variant('VSS_SENS == 0');
 VSS_noiseSens = Simulink.Variant('VSS_SENS == 1');
 
+VSS_MOT = 0;
+VSS_modMotor = Simulink.Variant('VSS_MOT == 0');
+VSS_measMotor = Simulink.Variant('VSS_MOT == 1');
 %% Global Variables
 
 rho = 1.184;
