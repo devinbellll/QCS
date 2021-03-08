@@ -6,6 +6,11 @@ Vehicle.Airframe.mass = 0.513;
 % Vehicle.Airframe.inertia = diag([0.0000716914 0.0000716914 0.0001]);
 Vehicle.Airframe.inertia = diag([0.0005547 0.0005547 0.0007738]);
 
+% Vehicle.Airframe.Cdx = 20;
+Vehicle.Airframe.Cdx = 0;
+Vehicle.Airframe.Cdy = 0;
+Vehicle.Airframe.diameter = .01; % For drag calculation purposes
+
 Vehicle.Motor.Throttle2w = 3; % Found through motor test
 Vehicle.Motor.maxSignal = 1000;
 Vehicle.Motor.minSignal = 100;
