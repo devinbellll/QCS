@@ -12,8 +12,8 @@ Controller.Throttle2F = [7.795453e-6 6.03210e-3 -5.48379e-1];
 Controller.Alt.Kp = 4;
 Controller.Alt.Kd = 4;
 
-Controller.Yaw.Kp = 0.01;
-Controller.Yaw.Kd = 0.0015;
+Controller.Yaw.Kp = 10;
+Controller.Yaw.Kd = 14;
 
 Controller.PitchRoll.Kp = 0.005;
 Controller.PitchRoll.Kd = 0.003;
