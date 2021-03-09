@@ -4,22 +4,26 @@ clear;
 clc;
 
 %% Set Variants
-VSS_ENV = 0;
+VSS_ENV = 1;
 VSS_constEnv = Simulink.Variant('VSS_ENV == 0');
 VSS_varEnv = Simulink.Variant('VSS_ENV == 1');
 
-VSS_SENS = 0;
+VSS_SENS = 1;
 VSS_feedSens = Simulink.Variant('VSS_SENS == 0');
 VSS_noiseSens = Simulink.Variant('VSS_SENS == 1');
 
 VSS_MOT = 0;
 VSS_modMotor = Simulink.Variant('VSS_MOT == 0');
 VSS_measMotor = Simulink.Variant('VSS_MOT == 1');
+
+VSS_VEH = 0;
+VSS_nonLinear = Simulink.Variant('VSS_VEH == 0');
+VSS_linear = Simulink.Variant('VSS_VEH == 1');
 %% Global Variables
 
 rho = 1.184;
 g = 9.81;
-Ts = 0.01;
+Ts = 0.005;
 
 %% Setup Tasks
 
