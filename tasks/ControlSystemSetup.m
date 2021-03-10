@@ -25,7 +25,16 @@ Controller.XY2Att.Kd = 0.1;
 
 %% Estimator
 
+
+%IMU
+Estimator.IMU.filterAccel = designfilt('lowpassfir', 'FilterOrder', 5, 'CutoffFrequency', 0.1);
+Estimator.IMU.filterGyro = designfilt('lowpassfir', 'FilterOrder', 5, 'CutoffFrequency', 0.8);
+[Estimator.IMU.filterGyroNum,Estimator.IMU.filterGyroDen] = cheby2(5,40,0.8);
+
 %Altitude
+[Estimator.alt.filterPrsNum,Estimator.alt.filterPrsDen] = butter(3,0.01);
+
+Estimator.alt.compFilter = 0.01;
 
 %KF
 Estimator.alt.kf.G = [0;1];
