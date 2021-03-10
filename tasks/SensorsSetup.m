@@ -6,8 +6,8 @@ Sensors.IMU.location = [0,0,0];
 Sensors.IMU.Fs = 200; % Hz
 
 %% Accelerometer
-Sensors.IMU.Accel.FSR = 2*g; % m/s^2
-Sensors.IMU.Accel.Sens = (1/16384)*g; % (m/s^2)/LSB
+Sensors.IMU.Accel.FSR = 16*g; % m/s^2
+Sensors.IMU.Accel.Sens = (1/2048)*g; % (m/s^2)/LSB
 Sensors.IMU.Accel.Bias = [0.02,0.02,0.03]; % m/s^2
 Sensors.IMU.Accel.noiseSpectral = g*230e-6; % m/s^2/sqrt(Hz)
 Sensors.IMU.Accel.tempScaleFactor = g*0.0008; % m/s^2/C
@@ -26,9 +26,10 @@ Sensors.IMU.Mag.FSR = 4800; % uT
 Sensors.IMU.Mag.Sens = 0.6; % uT/LSB
 
 %% Altimeter
-Sensors.Altimeter.Fs = 100; % Hz
-Sensors.Altimeter.noiseSpectral = 0.0004; % m/sqrt(Hz)
+Sensors.Altimeter.Fs = 1/0.24; % Hz
+Sensors.Altimeter.noiseSpectral = 0.2; % m/sqrt(Hz)
 Sensors.Altimeter.Bias = 0.01; % m
 Sensors.Altimeter.Sens = 0.0625; % m
 Sensors.Altimeter.BiasInstability = 0.05; % m
 Sensors.Altimeter.DecayFactor = 0.5;
+Sensors.Altimeter.PSD = Sensors.Altimeter.noiseSpectral^2; % m^2/Hz
