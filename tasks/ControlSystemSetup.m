@@ -15,9 +15,15 @@ Controller.Alt.Kd = 4;
 Controller.Yaw.Kp = 10;
 Controller.Yaw.Kd = 14;
 
+Controller.PitchRoll200.Kp = 0.0521662212265084;
+Controller.PitchRoll200.Ki = 0.00100771901961456;
+Controller.PitchRoll200.Kd = 0.599954511810091;
+Controller.PitchRoll200.N = 194.459278359077;
+
+
 Controller.PitchRoll.Kp = 0.005;
-Controller.PitchRoll.Kd = 0.003;
-Controller.PitchRoll.Ki = 0.005;
+Controller.PitchRoll.Ki = 0.003;
+Controller.PitchRoll.Kd = 0.005;
 
 Controller.XY2Att.Kp = 0.24;
 Controller.XY2Att.Kd = 0.1;
