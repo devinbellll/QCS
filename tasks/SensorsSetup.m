@@ -3,7 +3,7 @@
 %% IMU
 Sensors.IMU.cg = [0,0,0];
 Sensors.IMU.location = [0,0,0];
-Sensors.IMU.Fs = 200; % Hz
+Sensors.IMU.Fs = 100; % Hz
 
 %% Accelerometer
 Sensors.IMU.Accel.FSR = 16*g; % m/s^2

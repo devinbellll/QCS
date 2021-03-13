@@ -17,7 +17,7 @@ g = evalin('base','g');
 oldVariantVehicle = evalin('base','VSS_VEH');
 
 % Set up variants for trimming
-VSS_VEH = 0;
+VSS_VEH = 1;
 
 %Send variants to the workspace
 assignin('base','VSS_VEH',VSS_VEH);
