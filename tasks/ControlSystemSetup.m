@@ -35,7 +35,7 @@ Estimator.IMU.filterGyro = designfilt('lowpassfir', 'FilterOrder', 5, 'CutoffFre
 [Estimator.alt.filterPrsNum,Estimator.alt.filterPrsDen] = butter(3,0.01);
 
 Estimator.alt.compFilter = 0.01;
-
+Estimator.alt.compFilterV = 0.001;
 %KF
 Estimator.alt.kf.G = [0;1];
 Estimator.alt.kf.H = 0;
