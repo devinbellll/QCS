@@ -24,7 +24,7 @@ VSS_nonLinear = Simulink.Variant('VSS_VEH == 1');
 
 rho = 1.184;
 g = 9.81;
-Ts = 0.005;
+Ts = 0.01;
 
 %% Setup Tasks
 
