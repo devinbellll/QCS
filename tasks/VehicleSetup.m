@@ -3,8 +3,18 @@ Vehicle.Airframe.armLength = 0.11;
 Vehicle.Airframe.orthagPropDistance = Vehicle.Airframe.armLength*sqrt(2)/2;
 Vehicle.Airframe.propHeight = 0;
 Vehicle.Airframe.mass = 0.513;
+Vehicle.Airframe.motor_mass = 0.050;
 % Vehicle.Airframe.inertia = diag([0.0000716914 0.0000716914 0.0001]);
-Vehicle.Airframe.inertia = diag([0.0005547 0.0005547 0.0007738]);
+Ixx = ((2/5)*(Vehicle.Airframe.mass-(4*Vehicle.Airframe.motor_mass))...
+    *0.02^2) + 4*Vehicle.Airframe.motor_mass*Vehicle.Airframe.orthagPropDistance^2;
+
+Iyy = ((2/5)*(Vehicle.Airframe.mass-(4*Vehicle.Airframe.motor_mass))...
+    *0.04^2) + 4*Vehicle.Airframe.motor_mass*Vehicle.Airframe.orthagPropDistance^2;
+
+Izz = ((2/5)*(Vehicle.Airframe.mass-(4*Vehicle.Airframe.motor_mass))...
+    *0.04^2) + 4*Vehicle.Airframe.motor_mass*Vehicle.Airframe.armLength^2;
+
+Vehicle.Airframe.inertia = diag([Ixx Iyy Izz]);
 
 % Vehicle.Airframe.Cdx = 20;
 Vehicle.Airframe.Cdx = 0;
