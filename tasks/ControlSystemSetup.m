@@ -39,6 +39,8 @@ Controller.PID_yaw_D = 0.14;
 Controller.PID_alt_P = 0.08*8;
 Controller.PID_alt_D = 0.03*8;
 
+Controller.Alt_Hover_Const = Vehicle.Airframe.mass*9.81/4;
+
 % Controller.PitchRoll.Kp = 0.005;
 % Controller.PitchRoll.Ki = 0.003;
 % Controller.PitchRoll.Kd = 0.005;
