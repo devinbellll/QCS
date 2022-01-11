@@ -1,7 +1,9 @@
 # QCS (Quadcopter Control System)
 A stabilization and flight control system for a quadcopter, developed in MATLAB and Simulink.
 
-With Adam Bujak ([@adambujak](https://github.com/adambujak) - McMaster University - Mechatronics Engineering) see embedded development and PCB design repo [here](https://github.com/adambujak/FALCON).
+See embedded development and PCB design repo [here](https://github.com/adambujak/FALCON).
+
+Done in collaboration with Adam Bujak ([@adambujak](https://github.com/adambujak) - McMaster University - Mechatronics Engineering).
 
 # Highlights from Development
 
