@@ -13,6 +13,10 @@ With Adam Bujak ([@adambujak](https://github.com/adambujak) - McMaster Universit
 
 https://user-images.githubusercontent.com/47790946/148705799-1a313020-7e75-4045-ad6e-294311040c41.mp4
 
+## Custom PCB arrived from California courtesy of Adam Bujak
+
+<img width="1402" alt="PCB" src="https://user-images.githubusercontent.com/47790946/148867154-94501813-588b-4c70-9c6e-bd848d03584d.png">
+
 ## First desk-top test on 3D-printed test stand
 
 https://user-images.githubusercontent.com/47790946/148705807-855fa435-2b67-44c3-ac4a-68730c8c19b8.mp4
