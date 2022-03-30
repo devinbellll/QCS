@@ -4,7 +4,7 @@ clear;
 clc;
 
 %% Set Variants
-VSS_ENV = 1;
+VSS_ENV = 0;
 VSS_constEnv = Simulink.Variant('VSS_ENV == 0');
 VSS_varEnv = Simulink.Variant('VSS_ENV == 1');
 
